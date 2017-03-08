@@ -4,13 +4,54 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>One Month jQuery</title>
+        <title>Hang Trump</title>
         <!-- CSS -->
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
+    	<div class="intro-container">
+			<h1>WOULD YOU LIKE TO HANG TRUMP?</h1>
+			<br><br><br><br><br><br><br><br>
+			<button class="start">YES! Let's do it!</button>
+    	</div>
 
-<!--     // create a landing page and an input feild  -->
+		<div class="gameplay-container">
+			<h2>We've selected a word that Trump hates. It's good ole fashion hangman, folks. Guess the word by entering a letter below!</h2>
+	        
+	        <div class="input-container">
+		        <input type="text" id="guess-input" placeholder="Type a letter" maxlength="1">
+		        <button class="guess">Guess!</button>
+	        </div>
+
+			<div class="correct-word"></div>
+
+	        <div class="correct-letters"></div>
+
+	        <div class="bad-guesses">Uh oh, the following letter is not in the word:<br></div>
+
+	        <div class="guess-count">You only have <span class="guess-count-number"></span> lives left!</div>
+
+	        <div class="gameover">YOU LOST!</div>
+
+	        <button class="play-again">Play Again!</button>
+
+	        <div class="modal-trump">
+	        	  <div class="modal-background">
+<!-- 				    <span class="close">&times;</span> -->
+				    <img src="assets/fail.gif">
+				 </div>
+	        </div>
+
+	        <div class="modal-clinton">
+	        	  <div class="modal-background">
+<!-- 				    <span class="close">&times;</span> -->
+				    <img src="assets/celebrate.gif">
+				 </div>
+	        </div>
+
+        </div>
+
+    
 
         <!-- JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
